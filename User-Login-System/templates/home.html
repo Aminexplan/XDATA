@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="card-wrapper">
+
+    <div class="card">
+
+      <h1 class="center">Create an Account</h1>
+
+      <form name="signup_form">
+
+        <label for="name">Alias</label>
+        <input type="text" name="fullname" class="field" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" class="field" required>
+
+        <label for="password">Mot de pass</label>
+        <input type="password" name="password" class="field" required>
+
+        <label for="postaladress">Adresse Postale</label>
+        <input type="text" name="postaladress" class="field" required>
+
+        <label for="phonenumber">Numéro de Téléphone</label>
+        <input type="text" name="phonenumber" class="field" required>
+
+        <label for="commercialservice">Service Commercial</label>
+        <input type="text" name="commercialservice" class="field" required>
+
+        <label for="technicalservice">Service Technique</label>
+        <input type="text" name="technicalservice" class="field" required>
+
+        <p class="error error--hidden"></p>
+
+        <input type="submit" value="Sign Up" class="btn">
+      
+      </form>
+      
+    </div>
+
+    <div class="card">
+
+      <h1 class=" ">Log In</h1>
+
+      <form name="login_form">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" class="field" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" class="field" required>
+
+        <p class="error error--hidden"></p>
+
+        <input type="submit" value="Log In" class="btn">
+      
+      </form>
+      
+    </div>
+  
+  </div>
+{% endblock %}
